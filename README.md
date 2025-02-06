@@ -19,8 +19,10 @@ Follow these steps to set up the project on your local machine:
    Clone this repository to your local machine.
 
    git clone https://github.com/riwayatt1/rizky-makyo-test.git
+
    cd rizky-makyo-test
-2. **Install Dependencies**
+   
+3. **Install Dependencies**
    Install all dependencies using npm or yarn.
 
    npm install
@@ -29,7 +31,7 @@ Follow these steps to set up the project on your local machine:
 
    yarn install
 
-3. **Run the Project in Development Mode**
+4. **Run the Project in Development Mode**
    To run the React app in development mode, use the following command:
 
    npm run dev
