@@ -18,9 +18,8 @@ Follow these steps to set up the project on your local machine:
 1. **Clone the Repository**
    Clone this repository to your local machine.
 
-   git clone <REPOSITORY_URL>
-   cd <REPOSITORY_NAME>
-
+   git clone https://github.com/riwayatt1/rizky-makyo-test.git
+   cd rizky-makyo-test
 2. **Install Dependencies**
    Install all dependencies using npm or yarn.
 
