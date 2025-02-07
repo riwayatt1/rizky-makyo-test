@@ -42,11 +42,15 @@ const App = () => {
                   type="checkbox"
                   checked={isMultiple}
                   onChange={() => setIsMultiple(!isMultiple)}
-                  className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                  className="toggle-checkbox sr-only"
                 />
                 <label
-                  className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-                ></label>
+                  className={`toggle-label block overflow-hidden h-6 rounded-full ${isMultiple ? 'bg-blue-500' : 'bg-gray-300'} cursor-pointer`}
+                >
+                  <span
+                    className={`w-6 h-6 bg-white rounded-full border-4 transition-transform duration-200 ease-in ${isMultiple ? 'translate-x-6' : ''}`}
+                  ></span>
+                </label>
               </div>
             </div>
 
@@ -57,11 +61,15 @@ const App = () => {
                   type="checkbox"
                   checked={isWithSearch}
                   onChange={() => setIsWithSearch(!isWithSearch)}
-                  className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                  className="toggle-checkbox sr-only"
                 />
                 <label
-                  className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-                ></label>
+                  className={`toggle-label block overflow-hidden h-6 rounded-full ${isWithSearch ? 'bg-blue-500' : 'bg-gray-300'} cursor-pointer`}
+                >
+                  <span
+                    className={`w-6 h-6 bg-white rounded-full border-4 transition-transform duration-200 ease-in ${isWithSearch ? 'translate-x-6' : ''}`}
+                  ></span>
+                </label>
               </div>
             </div>
 
@@ -72,11 +80,15 @@ const App = () => {
                   type="checkbox"
                   checked={isOutlined}
                   onChange={() => setIsOutlined(!isOutlined)}
-                  className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                  className="toggle-checkbox sr-only"
                 />
                 <label
-                  className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-                ></label>
+                  className={`toggle-label block overflow-hidden h-6 rounded-full ${isOutlined ? 'bg-blue-500' : 'bg-gray-300'} cursor-pointer`}
+                >
+                  <span
+                    className={`w-6 h-6 bg-white rounded-full border-4 transition-transform duration-200 ease-in ${isOutlined ? 'translate-x-6' : ''}`}
+                  ></span>
+                </label>
               </div>
             </div>
           </div>
